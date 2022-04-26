@@ -1,0 +1,62 @@
+* {
+    color: white;
+}
+
+#dropdown-basic {
+    color: white;
+    position: relative;
+    bottom: 10px;
+}
+
+.nav__bar {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgba(16, 3, 3, 0);
+
+    .nav__logo {
+        position: relative;
+        top: 10px;
+    }
+    .nav__menu {
+        display: flex;
+        margin: 10px;
+        padding: 10px;
+        justify-content: space-between;
+     
+        .dropdown {
+             
+        }
+    }
+}
+
+.button {
+    background-color: grey;
+    border-radius: 50px;
+    height:50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: auto;
+ 
+   
+    padding: 10px;
+    
+    p {
+        position: relative;
+        top: 30%;
+        left: 15%;
+        text-decoration: none;
+        background:rgba(16, 3, 3, 0);
+    }
+}
+
+.login {
+    div {
+        margin: 10px;
+    }
+
+    .member {
+        position: relative;
+        top: 5px;
+    }
+}
