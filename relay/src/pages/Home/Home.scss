@@ -17,24 +17,22 @@
     z-index: 4;
     position: relative;
     left: 15%;
-    top: 20px;
+    top: 30%;
     width: 20%;
     background: rgba(255, 0, 0, 0) !important;
   }
-  .h3 {
-    background: red !important;
-  }
+  
 }
 
 .home:after {
   content: "";
   position: absolute;
   top: calc(-1 * var(--borderWidth));
-  left: calc(+50 * var(--borderWidth));
+  left: calc(+30 * var(--borderWidth));
   height: calc(100% + var(--borderWidth) * 2);
-  max-width: 80%;
+  max-width: 95%;
   margin: 5px;
-  width: 80%;
+  width: 90%;
   background: linear-gradient(
     140deg,
     #3b393800,
@@ -73,6 +71,8 @@
 }
 
 .bannerArt {
+    height: 200px;
+    background: rgba(255, 255, 255, 0) !important;
   .left {
     background-color: white;
     .block1 {
@@ -82,7 +82,7 @@
       z-index: 2;
       position: absolute;
       bottom: -1%;
-      left: 54.2%;
+      left: 54.9%;
     }
   }
 
@@ -105,9 +105,18 @@
         background: rgba(155, 25, 25, 0.351);
         z-index: 2;
         position: absolute;
-        left:75.6%;
+        left:74.1%;
        
         bottom: 75%;
       }
   }
+}
+
+.browse {
+    h3 {
+
+        position: relative;
+        left: 15%;
+        margin: 20px;
+    }
 }

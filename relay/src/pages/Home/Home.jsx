@@ -6,17 +6,26 @@ const Home = () => {
   return (
     <>
       <Nav />
-          <div className="home">
-        
-                  <h3>“Knowledge is power. Sharing knowledge is the key to unlocking that power.”
-                  ― Martin Uzochukwu Ugwu</h3>
-              <div className="bannerArt d-flex">
-                  <div className="left"><div className="block1"></div></div>
-                  <div className="middle"><div className="block2"></div></div>
-                  <div className="right"><div className="block3"></div></div>
-              </div>
-             
-      </div>
+      <div className="home">
+        <h3>
+          “Knowledge is power. Sharing knowledge is the key to unlocking that
+          power.” - Martin Uzochukwu Ugwu
+        </h3>
+        <div className="bannerArt d-flex">
+          <div className="left">
+            <div className="block1"></div>
+          </div>
+          <div className="middle">
+            <div className="block2"></div>
+          </div>
+          <div className="right">
+            <div className="block3"></div>
+          </div>
+        </div>
+          </div>
+          <div className="browse">
+              <h3>Browse By Category</h3>
+          </div>
     </>
   );
 };
