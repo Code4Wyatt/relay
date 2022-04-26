@@ -8,8 +8,8 @@
   position: relative;
   border-radius: var(--borderWidth);
   top: 0px;
-  margin: 10px;
-  margin-top: 10px;
+  margin: 0px;
+  margin-top: 0px;
   z-index: 1;
   height: 500px;
 
@@ -21,7 +21,6 @@
     width: 20%;
     background: rgba(255, 0, 0, 0) !important;
   }
-  
 }
 
 .home:after {
@@ -71,10 +70,12 @@
 }
 
 .bannerArt {
-    height: 200px;
-    background: rgba(255, 255, 255, 0) !important;
+  height: 200px;
+  background: rgba(255, 255, 255, 0) !important;
+
   .left {
     background-color: white;
+    
     .block1 {
       height: 130px;
       width: 130px;
@@ -87,36 +88,38 @@
   }
 
   .middle {
-      .block2 {
-          height: 250px;
-          width: 250px;
-          background: rgba(255, 255, 255, 0.074);
-          z-index: 2;
-          position: absolute;
-          left: 61.5%;
-          bottom: 25%;
-      }
+    .block2 {
+      height: 250px;
+      width: 250px;
+      background: rgba(255, 255, 255, 0.074);
+      z-index: 2;
+      position: absolute;
+      left: 61.5%;
+      bottom: 25%;
+      border: 1px dotted green;
+    }
   }
 
   .right {
-      .block3 {
-        height: 120px;
-        width: 120px;
-        background: rgba(155, 25, 25, 0.351);
-        z-index: 2;
-        position: absolute;
-        left:74.1%;
-       
-        bottom: 75%;
-      }
+    .block3 {
+      height: 120px;
+      width: 120px;
+      background: rgba(155, 25, 25, 0.351);
+      z-index: 2;
+      position: absolute;
+      left: 74.1%;
+
+      bottom: 75%;
+    }
   }
 }
 
 .browse {
-    h3 {
-
-        position: relative;
-        left: 15%;
-        margin: 20px;
-    }
+  position: relative;
+  top: 20px;
+  h3 {
+    position: relative;
+    left: 15%;
+    margin: 20px;
+  }
 }

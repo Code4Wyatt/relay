@@ -1,5 +1,6 @@
 import React from "react";
 import Nav from "../../components/Nav/Nav";
+import Category from "../../components/Category/Category"
 import "./Home.scss";
 
 const Home = () => {
@@ -24,7 +25,16 @@ const Home = () => {
         </div>
           </div>
           <div className="browse">
-              <h3>Browse By Category</h3>
+        <h3>Browse By Category</h3>
+        <div className="categories">
+          <Category className="category" title={"Back-End Development"} img={"https://th.bing.com/th/id/R.7b8fbfeba3cfea03ce5d563abd6db6e2?rik=PIz1pmEicVslhA&riu=http%3a%2f%2flogopond.com%2flogos%2fa2dc2d250540d76f8c8d8b2b213836ec.png&ehk=WfIV9MIClFGsIOdHWn4WtbBMdOQFzxi%2fYNTrAsc7NrU%3d&risl=&pid=ImgRaw&r=0" }/>
+          <Category title={"Front-End Development"} img={"https://cdn.dribbble.com/users/29868/screenshots/4591147/army_logo.png" }/>
+          <Category title={"JavaScript"} img={"https://logos-download.com/wp-content/uploads/2019/01/JavaScript_Logo.png" }/>
+          <Category title={"Java"} img={"https://www.viafirma.com/faq/wp-content/uploads/sites/12/2018/12/logo-java-applet.jpeg" }/>
+          <Category title={"Data Analysis"} img={"https://st4.depositphotos.com/18657574/21814/v/1600/depositphotos_218141310-stock-illustration-data-analysis-vector-icon-isolated.jpg" }/>
+          <Category title={"Python"} img={"https://th.bing.com/th/id/R.10327dc6812b05b66a2b6b44c55a097c?rik=nKIXnE7Aetd6Uw&pid=ImgRaw&r=0" }/>
+          <Category title={"Databases"} img={"https://thumbs.dreamstime.com/b/database-icon-logo-modern-line-style-high-quality-black-outline-pictogram-web-site-design-mobile-apps-vector-80593881.jpg" }/>
+        </div>
           </div>
     </>
   );
