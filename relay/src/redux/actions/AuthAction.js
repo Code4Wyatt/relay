@@ -44,6 +44,7 @@ const LoginAuthAction = (loginState, navigate, setErrorHandler) => {
       console.log(res);
       const { data } = res;
       dispatch({ type: AuthActionType.LOGIN_SUCCESS, payload: data });
+      setLocalStorage("user", data)
       navigate("/")
     } catch (error) {
       console.log(error)

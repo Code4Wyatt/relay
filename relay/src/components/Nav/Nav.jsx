@@ -1,8 +1,16 @@
-import React from "react";
 import "./Nav.scss";
 import { Dropdown } from "react-bootstrap";
+import { LoginAuthAction } from "../../redux/actions/AuthAction";
+import React, { useEffect, useState } from "react";
+import { connect } from "react-redux";
+import { useNavigate } from "react-router";
+import { useSelector } from "react-redux";
 
 const Nav = () => {
+
+  const loggedIn = useSelector((state) => state.currentUser);
+
+  console.log("Logged",loggedIn)
   return (
     <div className="nav__bar d-flex">
       <div className="nav__logo">
@@ -67,4 +75,12 @@ const Nav = () => {
   );
 };
 
-export default Nav;
+const mapStateToProps = (state) => {
+    return {
+        user: state,
+    }
+};
+
+
+
+export default connect(mapStateToProps)(Nav);
