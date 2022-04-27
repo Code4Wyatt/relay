@@ -57,7 +57,7 @@ const Nav = () => {
         </a>
               </div>
         
-        <a href="/">
+        <a href="/login">
           <div className="button">
             <p>Login</p>
           </div>
