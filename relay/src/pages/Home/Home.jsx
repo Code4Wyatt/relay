@@ -1,9 +1,45 @@
-import React from "react";
+import { useState, useEffect } from "react";
+import { useSelector, connect, useDispatch } from "react-redux";
+import { addCurrentUserAction } from "../../redux/actions/UserAction";
 import Nav from "../../components/Nav/Nav";
 import Category from "../../components/Category/Category"
 import "./Home.scss";
 
+
 const Home = () => {
+  const [profile, setProfile] = useState([]);
+  const jwtToken = useSelector((state) => state.authState.user.accessToken);
+  const email = useSelector((state) => state.authState.user.email);
+
+  console.log(jwtToken);
+  console.log("email", email);
+  console.log("profile", profile);
+
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    const fetchProfile = async () => {
+      try {
+        let response = await fetch(`http://localhost:5000/users/currentUser/${email}`, {
+          headers: {
+            Authorization: `Bearer ${jwtToken}`
+          }
+        });
+
+        if (response.ok) {
+          let data = await response.json();
+          console.log(data);
+          setProfile(data);
+          dispatch(addCurrentUserAction({ data }));
+          console.log(profile);
+        }
+      } catch (error) {
+        console.log(error);
+      }
+    };
+    fetchProfile();
+  }, [])
+
   return (
     <>
       <Nav />
